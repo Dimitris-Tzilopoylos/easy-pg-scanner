@@ -40,10 +40,13 @@ var Queries = require("./queries");
 var formatColumn = function (_a) {
     var column = _a.column, indexes = _a.indexes, foreignKeys = _a.foreignKeys, checkConstraints = _a.checkConstraints;
     return ({
+        isArray: column.data_type === "ARRAY",
         name: column.column_name,
         nullable: column.is_nulable === "YES",
         defaultValue: column.column_default,
-        type: column.data_type,
+        type: column.data_type === "ARRAY"
+            ? "".concat(column.udt_name.substring(1), "[]")
+            : column.data_type,
         unique: (indexes || []).some(function (idx) {
             return idx.is_unique &&
                 !idx.is_primary &&
