@@ -47,7 +47,7 @@ The package exports a function `loadDatabase` which, when invoked with the appro
 - `functions`: An array of functions defined in the schema.
 - `tables`: An array of objects representing each table in the schema. Each table object contains:
   - `table`: The name of the table.
-  - `columns`: An array of column objects representing the columns in the table. Each column object includes properties such as `name`, `nullable`, `defaultValue`, `type`, `unique`, `primary`, `foreign`, and `check`.
+  - `columns`: An array of column objects representing the columns in the table. Each column object includes properties such as `name`, `nullable`, `defaultValue`, `type`,`isArray`,`unique`, `primary`, `foreign`, and `check`.
   - `indexes`: An array of indexes defined on the table.
   - `foreignKeys`: An array of foreign keys defined on the table.
   - `triggers`: An array of triggers defined on the table.
