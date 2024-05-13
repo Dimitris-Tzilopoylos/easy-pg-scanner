@@ -19,11 +19,11 @@ const loadDatabase = require("easy-pg-scanner");
 
 // Your PostgreSQL connection options
 const connectionOptions = {
-    host:'...',
-    port: 5432,
-    user:'...'
-    password:'...',
-    database:'postgres'
+  host: "...",
+  port: 5432,
+  user: "...",
+  password: "...",
+  database: "postgres",
 };
 
 const fetchDatabase = async () => {
