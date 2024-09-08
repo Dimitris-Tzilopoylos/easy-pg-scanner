@@ -1,6 +1,6 @@
 {
   "name": "easy-pg-scanner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy postgres database loader",
   "main": "index.js",
   "directories": {
