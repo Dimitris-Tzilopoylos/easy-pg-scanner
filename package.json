@@ -1,6 +1,6 @@
 {
   "name": "easy-pg-scanner",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Easy postgres database loader",
   "main": "index.js",
   "directories": {
@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "easy-psql": "^0.1.23",
     "pg": "^8.11.5"
   },
   "devDependencies": {
